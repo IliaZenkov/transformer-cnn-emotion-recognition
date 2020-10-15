@@ -3,6 +3,7 @@
 # [See Notebook for Code and Explanations](https://nbviewer.jupyter.org/github/IliaZenkov/transformer_cnn_parallel_audio_classification/blob/main/parallel_is_all_you_want1.ipynb)
 
 <img src="reports/cnn-transformer-final.png">
+
 ## Abstract
 In this notebook, I'm going to build upon my Intro to Speech Audio Classification repo and build two parallel convolutional neural networks (CNN) in parallel with a Transformer encoder network to classify audio data. We're working on the RAVDESS dataset to classify emotions from one of 8 classes. We combine the CNN for spatial feature representation and the Transformer for temporal feature representation. We augment the training data by increasing variation in the dataset to reduce overfitting; we use Additive White Gaussian Noise (AWGN) to augment the RAVDESS dataset three-fold for a total of 4320 audio samples.
 
@@ -17,7 +18,7 @@ This notebook takes inspirations from a variety of recent advances in deep learn
 - [Introduction](#Introduction)
   - [Define features](#Define-features)
   - [Load Data and Extract Features](#Load-Data-and-Extract-Features)
-  - [Augmenting the Data with AWGN: Additive White Gaussian Noise](#Augmenting-the-Data-with-AWGN:-Additive-White-Gaussian-Noise)
+  - [Augmenting the Data with AWGN: Additive White Gaussian Noise](#Augmenting-the-Data-with-AWGN---Additive-White-Gaussian-Noise)
   - [Format Data into Tensor-Ready 4D Arrays](#Format-Data-into-Tensor-Ready-4D-Arrays)
   - [Split into Train/Validation/Test Sets](#Split-into-Train/Validation/Test-Sets)
   - [Feature Scaling](#Feature-Scaling)
@@ -39,15 +40,15 @@ This notebook takes inspirations from a variety of recent advances in deep learn
 - [References](#References)
 
 # Appendices
-- [Appendix A: Convolutional Neural Nets Dissected](#Appendix-A:-Convolutional-Neural-Nets-Dissected)
+- [Appendix A: Convolutional Neural Nets Dissected](#Appendix-A---Convolutional-Neural-Nets-Dissected)
   - [Kernels and Filters](#Kernels-and-Filters)
   - [Zero Padding](#Zero-Padding)
   - [Max Pooling](#Max-Pooling)
   - [Regularization Using Dropout and a note on Pruning](#Regularization-Using-Dropout-and-a-note-on-Pruning)
   - [Batch Normalization and Optimizing the Optimization Landsape](#Batch-Normalization-and-Optimizing-the-Optimization-Landsape)
-  - [ReLU: Non-Saturated Activations are Healthier (for CNNs)](#ReLU:-Non-Saturated-Activations-are-Healthier-[for-CNNs])
+  - [ReLU: Non-Saturated Activations are Healthier (for CNNs)](#ReLU---Non-Saturated-Activations-are-Healthier-[for-CNNs])
   - [Turning Feature Maps into Probabilities with a Fully Connected Layer](#Turning-Feature-Maps-into-Probabilities-with-a-Fully-Connected-Layer)
-- [Appendix B: The Transformer](#Appendix-B:-The-Transformer)
+- [Appendix B: The Transformer](#Appendix-B---The-Transformer)
     - [Self-Attention](#Self-Attention)
     - [Multi-Head Self-Attention](#Multi-Head-Self-Attention)
     - [Transformer Architecture](#Transformer-Architecture)
@@ -55,7 +56,7 @@ This notebook takes inspirations from a variety of recent advances in deep learn
         - [Encoder](#Encoder)
         - [Decoder](#Decoder)
         - [Output](#Output)
-- [Appendix C: From Autoencoders to LSTM to Attention](#Appendix-C:-From-Autoencoders-to-Attention)
+- [Appendix C: From Autoencoders to LSTMs to Attention](#Appendix-C---From-Autoencoders-to-LSTMs-to-Attention)
   - [Autoencoders](#Autoencoders)
   - [The Sparse Autoencoder](#The-Sparse-Autoencoder)
   - [The Variational Autoencoder, Decoders, and Latent Space](#The-Variational-Autoencoder,-Decoders,-and-Latent-Space)
@@ -63,6 +64,6 @@ This notebook takes inspirations from a variety of recent advances in deep learn
   - [The LSTM Cell](#The-LSTM-Cell)
   - [Bidirectional RNN](#Bidirectional-RNN)
   - [The Attention Mechanism](#The-Attention-Mechanism)
-- [Appendix D: Supplementary Notes](#Appendix-D:-Supplementary-Notes)
+- [Appendix D: Supplementary Notes](#Appendix-D---Supplementary-Notes)
   - [More CNN Kernel/Filter Math](#More-CNN-Kernel/Filter-Math)
   - [Smoothing the Optimization Surface](#Smoothing-the-Optimization-Surface)
