@@ -1,6 +1,6 @@
 [See Notebook for Code and Explanations](https://nbviewer.jupyter.org/github/IliaZenkov/transformer_cnn_parallel_audio_classification/blob/main/parallel_is_all_you_want1.ipynb)
 
-# Parallel is All You Want: Combining Spatial and Temporal Representions of Features of Speech Emotion by Parallelizing 2D CNNs and Transformer-Encoders
+# Parallel is All You Want: Combining Spatial and Temporal Feature Representions of Speech Emotion by Parallelizing 2D CNNs and Transformer-Encoders
 ## Abstract
 In this notebook, I'm going to build upon my Intro to Speech Audio Classification repo and build two parallel convolutional neural networks (CNN) in parallel with a Transformer encoder network to classify audio data. We're working on the RAVDESS dataset to classify emotions from one of 8 classes. We combine the CNN for spatial feature representation and the Transformer for temporal feature representation. We augment the training data by increasing variation in the dataset to reduce overfitting; we use Additive White Gaussian Noise (AWGN) to augment the RAVDESS dataset three-fold for a total of 4320 audio samples.
 
