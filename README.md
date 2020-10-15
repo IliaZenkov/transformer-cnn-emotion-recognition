@@ -16,7 +16,7 @@ This notebook takes inspirations from a variety of recent advances in deep learn
 - [Introduction](#Introduction)
   - [Define features](#Define-features)
   - [Load Data and Extract Features](#Load-Data-and-Extract-Features)
-  - [Augmenting the Data with AWGN - Additive White Gaussian Noise](#Augmenting-the-Data-with-AWGN:-Additive-White-Gaussian-Noise)
+  - [Augmenting the Data with AWGN: Additive White Gaussian Noise](#Augmenting-the-Data-with-AWGN\:-Additive-White-Gaussian-Noise)
   - [Format Data into Tensor-Ready 4D Arrays](#Format-Data-into-Tensor-Ready-4D-Arrays)
   - [Split into Train/Validation/Test Sets](#Split-into-Train/Validation/Test-Sets)
   - [Feature Scaling](#Feature-Scaling)
