@@ -4,7 +4,7 @@
 
 <img src="reports/cnn-transformer-final.png">
 
-|         |        |
+| 97.11% Test Accuracy       |        |
 |---------------------------|------------------|
 <img src="reports/nicely initialized weights.GIF">  | <img src="reports/conf_matrix.GIF">|
 
