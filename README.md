@@ -19,7 +19,7 @@ This notebook takes inspirations from a variety of recent advances in deep learn
 
 <!--TABLE OF CONTENTS-->
 # Table of Contents
-- [Introduction](#Introduction)
+- [Introduction](https://nbviewer.jupyter.org/github.com/IliaZenkov/transformer_cnn_parallel_audio_classification/blob/main/notebooks/parallel_is_all_you_want.ipynb#Introduction)
   - [Define features](#Define-features)
   - [Load Data and Extract Features](#Load-Data-and-Extract-Features)
   - [Augmenting the Data with AWGN: Additive White Gaussian Noise](#Augmenting-the-Data-with-AWGN---Additive-White-Gaussian-Noise)
