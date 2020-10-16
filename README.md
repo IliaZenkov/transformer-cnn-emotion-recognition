@@ -5,7 +5,7 @@ Note: GitHub's notebook viewer disables table of contents; nbviewer version has 
 
 <img src="reports/cnn-transformer-final.png">
 
-| 97.11% Test Accuracy      | <sub>yes, that's hard to believe; please email me if you find a methodology error; my email's in my profile.</sub>       |
+| 97.11% Test Accuracy      | <sub>yes, that's borderline suspiciously-good; please email me if you find a methodology error; my email's in my profile.</sub>       |
 |---------------------------|------------------|
 <img src="reports/nicely initialized weights.GIF">  | <img src="reports/conf_matrix.GIF">|
 
