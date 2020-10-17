@@ -4,7 +4,7 @@
 
 <img src="reports/cnn-transformer-final.png">
 
-| 97.11% Test Accuracy      | <sub>yes, that's borderline suspiciously-good; please email me if you find a methodology error; my email's in my profile</sub>       |
+|       |       |
 |---------------------------|------------------|
 <img src="reports/nicely initialized weights.GIF">  | <img src="reports/conf_matrix.GIF">|
 
