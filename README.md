@@ -4,7 +4,7 @@
 
 <img src="reports/cnn-transformer-final.png">
 
-|       |       |
+|  80.44% Accuracy     |       |
 |---------------------------|------------------|
 <img src="reports/final loss curve.GIF">  | <img src="reports/conf_matrix.GIF">|
 
