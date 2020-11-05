@@ -100,6 +100,7 @@ Notable mentions:
 - U of T CSC2515, Optimization: https://www.cs.toronto.edu/~hinton/csc2515/notes/lec6tutorial.pdf
 
 
+## Cite
 If you find this work useful in your own research, please cite as follows:
 
 ```
@@ -112,3 +113,6 @@ If you find this work useful in your own research, please cite as follows:
   howpublished = {\url{https://github.com/IliaZenkov/transformer-cnn-emotion-recognition}},
 }
 ```
+## Licence
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/IliaZenkov/transformer-cnn-emotion-recognition/blob/main/LICENSE)
