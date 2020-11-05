@@ -101,11 +101,11 @@ Notable mentions:
 
 If you find this work useful in your own research, please cite as follows:
 
-```@misc{Zenkov-Transformer-CNN-SER,
+@misc{Zenkov-Transformer-CNN-SER,
   author = {Zenkov, Ilia},
   title = {transformer-cnn-emotion-recognition},
   year = {2020},
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/IliaZenkov/transformer-cnn-emotion-recognition}},
-}```
+}
