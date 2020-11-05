@@ -99,8 +99,10 @@ Notable mentions:
 - Stanford's CS231n: https://cs231n.github.io/convolutional-networks/
 - U of T CSC2515, Optimization: https://www.cs.toronto.edu/~hinton/csc2515/notes/lec6tutorial.pdf
 
+
 If you find this work useful in your own research, please cite as follows:
 
+```
 @misc{Zenkov-Transformer-CNN-SER,
   author = {Zenkov, Ilia},
   title = {transformer-cnn-emotion-recognition},
@@ -109,3 +111,4 @@ If you find this work useful in your own research, please cite as follows:
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/IliaZenkov/transformer-cnn-emotion-recognition}},
 }
+```
