@@ -1,6 +1,6 @@
 
 ## Parallel is All You Want: Combining Spatial and Temporal Feature Representions of Speech Emotion by Parallelizing CNNs and Transformer-Encoders
-### Code and explanations, see notebook: [nbviewer](https://nbviewer.jupyter.org/github/IliaZenkov/transformer_cnn_parallel_audio_classification/blob/main/notebooks/Parallel_is_All_You_Want.ipynb)
+### [See Notebook for Code and Explanations](https://nbviewer.jupyter.org/github/IliaZenkov/transformer_cnn_parallel_audio_classification/blob/main/notebooks/Parallel_is_All_You_Want.ipynb)
 
 <img src="reports/cnn-transformer-final.png">
 
